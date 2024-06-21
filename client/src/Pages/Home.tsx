@@ -1,5 +1,7 @@
 import { Booking } from '../Components/Booking';
 import { About } from '../Components/About';
+import Services from '../Components/ServicesSection/Services';
+import CustomerExperience from '../Components/CustomerExperience/CustomerExperience';
 
 export function Home() {
   return (
@@ -43,7 +45,9 @@ export function Home() {
             </div>
           </div>
         </div>
+        <Services />
       </div>
+      <CustomerExperience />
     </div>
   );
 }

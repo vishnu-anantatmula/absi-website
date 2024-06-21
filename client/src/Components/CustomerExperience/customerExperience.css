@@ -1,0 +1,14 @@
+.customer-section {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.customer-card-container {
+  min-width: 300px;
+}
+
+@media screen and (width >=1024px) {
+  .customer-card-container {
+    min-width: 425px;
+  }
+}
