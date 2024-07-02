@@ -1,8 +1,9 @@
 import { Outlet, Link } from 'react-router-dom';
 import { FaBars } from 'react-icons/fa';
-import { ServicesLinks } from './Services';
+import { ServicesLinks } from './ServicesLinks';
 import { useState } from 'react';
 import { PortalLinks } from './PortalLinks';
+import { HashLink } from 'react-router-hash-link';
 
 type Props = {
   isOpen: boolean;
@@ -38,11 +39,11 @@ export function NavBar({ isOpen, setIsOpen }: Props) {
                 className="grid place-items-center basis-1/3"
                 onMouseEnter={() => setIsServicesActive(true)}
                 onMouseLeave={() => setIsServicesActive(false)}>
-                <Link
-                  to="/"
+                <HashLink
+                  to="#services"
                   className="h-3/4 flex items-end text-lg font-bold pb-1">
                   <span className="relative">Services</span>
-                </Link>
+                </HashLink>
                 {isServicesActive && <ServicesLinks />}
               </div>
               <div

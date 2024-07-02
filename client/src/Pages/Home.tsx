@@ -8,7 +8,7 @@ import CustomerExperience from '../Components/CustomerExperience/CustomerExperie
 export function Home() {
   return (
     <div>
-      <div className="mt-2 grid gap-4">
+      <div className="mt-2 grid gap-4 mb-12">
         <div className="flex flex-wrap w-full">
           <HeroImage />
           <Banner />
@@ -31,9 +31,9 @@ export function Home() {
             </div>
           </div>
         </div>
-        <Services />
       </div>
       <CustomerExperience />
+      <Services />
     </div>
   );
 }
