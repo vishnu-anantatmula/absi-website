@@ -5,7 +5,7 @@ type Props = {
   url: string;
 };
 
-export function Button({ text, url }: Props) {
+export function PortalLink({ text, url }: Props) {
   return (
     <Link
       className="font-semibold bg-blue-950 py-3 px-12 rounded-lg shadow-md basis-full text-white min-w-64"

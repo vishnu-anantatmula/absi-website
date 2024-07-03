@@ -1,4 +1,4 @@
-import { Button } from './Button';
+import { PortalLink } from './PortalLink';
 import { Title } from './Title';
 
 export function Customer() {
@@ -8,7 +8,7 @@ export function Customer() {
         <Title title="Customer Portal" />
       </div>
       <div className="px-6">
-        <Button text="Login" url="https://customerabsi.blog/" />
+        <PortalLink text="Login" url="https://customerabsi.blog/" />
       </div>
     </div>
   );
