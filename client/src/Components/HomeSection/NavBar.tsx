@@ -51,7 +51,7 @@ export function NavBar({ isOpen, setIsOpen }: Props) {
                 onMouseEnter={() => setIsPortalActive(true)}
                 onMouseLeave={() => setIsPortalActive(false)}>
                 <Link
-                  to="/"
+                  to="/portal"
                   className="h-3/4 flex items-end text-lg font-bold pb-1">
                   Customer Portal
                 </Link>
