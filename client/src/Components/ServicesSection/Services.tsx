@@ -4,7 +4,7 @@ import AllServiceCards from './AllServiceCards';
 export default function Services() {
   return (
     <>
-      <section className="service-section">
+      <section className="service-section" id="services">
         <div className="py-10">
           <h1 className="text-2xl lg:text-5xl font-marven leading-9 py-3">
             SERVICES
