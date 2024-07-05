@@ -8,7 +8,7 @@ type Props = {
 export function PortalLink({ text, url }: Props) {
   return (
     <Link
-      className="font-semibold bg-blue-950 py-3 px-12 rounded-lg shadow-md basis-full text-white min-w-64"
+      className="font-semibold bg-blue-950 py-5 px-12 rounded-lg shadow-md text-white block w-96 text-center text-lg"
       to={url}
       target="_blank">
       {text}
