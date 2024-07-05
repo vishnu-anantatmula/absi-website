@@ -7,7 +7,7 @@ export function Customer() {
       <div className="basis-full px-6">
         <Title title="Customer Portal" />
       </div>
-      <div className="basis-full flex justify-center">
+      <div className="basis-full sm:px-6">
         <PortalLink text="Login" url="https://customerabsi.blog/" />
       </div>
     </div>
