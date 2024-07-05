@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { GoXCircle } from 'react-icons/go';
+import { HashLink } from 'react-router-hash-link';
 
 type Props = {
   isOpen: boolean;
@@ -18,7 +19,7 @@ export function Menu({ isOpen, setIsOpen }: Props) {
   ];
 
   return (
-    <div>
+    <>
       {menu.map((item, index) => {
         if (index === 0)
           return (
@@ -39,7 +40,7 @@ export function Menu({ isOpen, setIsOpen }: Props) {
           />
         );
       })}
-    </div>
+    </>
   );
 }
 
@@ -61,11 +62,20 @@ function MenuItem({ name, style, isOpen, setIsOpen }: MenuItemProps) {
     case 'Home':
       path = '/';
       break;
+    case 'Book a Consultation':
+      path = '/';
+      break;
+    case 'Our Services':
+      path = '#services';
+      break;
+    case 'Customer Portal':
+      path = '/portal';
+      break;
   }
 
   if (name === 'Menu')
     return (
-      <Link to="/" className="cursor-pointer">
+      <Link to={path} className="cursor-pointer">
         <div
           className={`px-6 py-3 text-2xl font-semibold border-b-2 border-cyan-500 ${style} flex justify-between`}>
           <span>{name}</span>
@@ -78,9 +88,9 @@ function MenuItem({ name, style, isOpen, setIsOpen }: MenuItemProps) {
       </Link>
     );
 
-  if (name === 'Home')
+  if (name === 'Our Services')
     return (
-      <Link
+      <HashLink
         to={path}
         className="cursor-pointer"
         onClick={() => setIsOpen(!isOpen)}>
@@ -88,11 +98,14 @@ function MenuItem({ name, style, isOpen, setIsOpen }: MenuItemProps) {
           className={`px-6 py-3 text-2xl font-semibold border-b-2 border-cyan-500 ${style}`}>
           {name}
         </div>
-      </Link>
+      </HashLink>
     );
 
   return (
-    <Link to={path} className="cursor-pointer">
+    <Link
+      to={path}
+      className="cursor-pointer"
+      onClick={() => setIsOpen(!isOpen)}>
       <div
         className={`px-6 py-3 text-2xl font-semibold border-b-2 border-cyan-500 ${style}`}>
         {name}
