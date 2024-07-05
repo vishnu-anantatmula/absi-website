@@ -61,6 +61,9 @@ function MenuItem({ name, style, isOpen, setIsOpen }: MenuItemProps) {
     case 'Home':
       path = '/';
       break;
+    case 'Book a Consultation':
+      path = '/contact';
+      break;
   }
 
   if (name === 'Menu')

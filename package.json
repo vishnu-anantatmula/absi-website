@@ -44,5 +44,10 @@
     "stylelint-config-standard": "^32.0.0",
     "tsx": "^4.7.0",
     "typescript": "^5.4.3"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.3.3",
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.3.3"
   }
 }
