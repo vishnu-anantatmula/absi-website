@@ -1,10 +1,9 @@
-import { Outlet, Link, useNavigate } from 'react-router-dom';
+import { Outlet, Link } from 'react-router-dom';
 import { FaBars } from 'react-icons/fa';
 import { ServicesLinks } from './ServicesLinks';
 import { useState } from 'react';
 import { PortalLinks } from './PortalLinks';
 import { HashLink } from 'react-router-hash-link';
-import { Footer } from './Footer';
 
 type Props = {
   isOpen: boolean;
@@ -14,12 +13,6 @@ type Props = {
 export function NavBar({ isOpen, setIsOpen }: Props) {
   const [isServicesActive, setIsServicesActive] = useState(false);
   const [isPortalActive, setIsPortalActive] = useState(false);
-  const navigate = useNavigate();
-
-  function clickHandler() {
-    setIsOpen(!isOpen);
-    navigate('/');
-  }
 
   return (
     <div>
@@ -34,7 +27,7 @@ export function NavBar({ isOpen, setIsOpen }: Props) {
             <div className="grid place-items-center lg:hidden">
               <FaBars
                 className="text-3xl cursor-pointer"
-                onClick={clickHandler}
+                onClick={() => setIsOpen(!isOpen)}
               />
             </div>
             <div className="hidden lg:flex basis-2/3">
@@ -78,7 +71,6 @@ export function NavBar({ isOpen, setIsOpen }: Props) {
         </header>
       </div>
       <Outlet />
-      <Footer />
     </div>
   );
 }

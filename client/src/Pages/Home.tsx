@@ -2,10 +2,18 @@ import { HeroImage } from '../Components/HomeSection/HeroImage';
 import { Booking } from '../Components/HomeSection/Booking';
 import { Banner } from '../Components/HomeSection/Banner';
 import { About } from '../Components/HomeSection/About';
+import { Menu } from './Menu';
 import Services from '../Components/ServicesSection/Services';
 import CustomerExperience from '../Components/CustomerExperience/CustomerExperience';
 
-export function Home() {
+type Props = {
+  isOpen: boolean;
+  setIsOpen: (arg1: boolean) => void;
+};
+
+export function Home({ isOpen, setIsOpen }: Props) {
+  if (isOpen) return <Menu isOpen={isOpen} setIsOpen={setIsOpen} />;
+
   return (
     <div>
       <div className="mt-2 grid gap-4 mb-12">

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { GoXCircle } from 'react-icons/go';
+import { HashLink } from 'react-router-hash-link';
 
 type Props = {
   isOpen: boolean;
@@ -18,7 +19,7 @@ export function Menu({ isOpen, setIsOpen }: Props) {
   ];
 
   return (
-    <div>
+    <>
       {menu.map((item, index) => {
         if (index === 0)
           return (
@@ -39,7 +40,7 @@ export function Menu({ isOpen, setIsOpen }: Props) {
           />
         );
       })}
-    </div>
+    </>
   );
 }
 
@@ -51,9 +52,7 @@ type MenuItemProps = {
 };
 
 function MenuItem({ name, style, isOpen, setIsOpen }: MenuItemProps) {
-  // Switch statement here evaluating if name is equal to string, set the to attribute on the Link element to the variable that will be declared in the switch statement
-
-  let path;
+  let path = '';
 
   switch (name) {
     case 'Menu':
@@ -61,11 +60,26 @@ function MenuItem({ name, style, isOpen, setIsOpen }: MenuItemProps) {
     case 'Home':
       path = '/';
       break;
+    case 'Book a Consultation':
+      path = '/';
+      break;
+    case 'Our Services':
+      path = '#services';
+      break;
+    case 'Customer Portal':
+      path = '/portal';
+      break;
+    case '(703) 661-4280':
+      path = 'tel:703-661-4280';
+      break;
+    case 'support@absi1.com':
+      path = 'mailto:support@absi1.com';
+      break;
   }
 
   if (name === 'Menu')
     return (
-      <Link to="/" className="cursor-pointer">
+      <Link to={path} className="cursor-pointer">
         <div
           className={`px-6 py-3 text-2xl font-semibold border-b-2 border-cyan-500 ${style} flex justify-between`}>
           <span>{name}</span>
@@ -78,12 +92,22 @@ function MenuItem({ name, style, isOpen, setIsOpen }: MenuItemProps) {
       </Link>
     );
 
-  if (name === 'Home')
+  if (name === 'Our Services')
     return (
-      <Link
+      <HashLink
         to={path}
         className="cursor-pointer"
         onClick={() => setIsOpen(!isOpen)}>
+        <div
+          className={`px-6 py-3 text-2xl font-semibold border-b-2 border-cyan-500 ${style}`}>
+          {name}
+        </div>
+      </HashLink>
+    );
+
+  if (name === '(703) 661-4280' || name === 'support@absi1.com')
+    return (
+      <Link to={path} className="cursor-pointer">
         <div
           className={`px-6 py-3 text-2xl font-semibold border-b-2 border-cyan-500 ${style}`}>
           {name}
@@ -92,7 +116,10 @@ function MenuItem({ name, style, isOpen, setIsOpen }: MenuItemProps) {
     );
 
   return (
-    <Link to={path} className="cursor-pointer">
+    <Link
+      to={path}
+      className="cursor-pointer"
+      onClick={() => setIsOpen(!isOpen)}>
       <div
         className={`px-6 py-3 text-2xl font-semibold border-b-2 border-cyan-500 ${style}`}>
         {name}
