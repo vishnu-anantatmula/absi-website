@@ -15,10 +15,6 @@ export function NavBar({ isOpen, setIsOpen }: Props) {
   const [isServicesActive, setIsServicesActive] = useState(false);
   const [isPortalActive, setIsPortalActive] = useState(false);
 
-  function clickHandler() {
-    setIsOpen(!isOpen);
-  }
-
   return (
     <div>
       <div className="container py-4">
@@ -32,7 +28,7 @@ export function NavBar({ isOpen, setIsOpen }: Props) {
             <div className="grid place-items-center lg:hidden">
               <FaBars
                 className="text-3xl cursor-pointer"
-                onClick={clickHandler}
+                onClick={() => setIsOpen(!isOpen)}
               />
             </div>
             <div className="hidden lg:flex basis-2/3">
