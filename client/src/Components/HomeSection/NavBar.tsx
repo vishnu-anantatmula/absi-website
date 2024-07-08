@@ -1,4 +1,4 @@
-import { Outlet, Link, useNavigate } from 'react-router-dom';
+import { Outlet, Link } from 'react-router-dom';
 import { FaBars } from 'react-icons/fa';
 import { ServicesLinks } from './ServicesLinks';
 import { useState } from 'react';
@@ -14,11 +14,9 @@ type Props = {
 export function NavBar({ isOpen, setIsOpen }: Props) {
   const [isServicesActive, setIsServicesActive] = useState(false);
   const [isPortalActive, setIsPortalActive] = useState(false);
-  const navigate = useNavigate();
 
   function clickHandler() {
     setIsOpen(!isOpen);
-    navigate('/');
   }
 
   return (

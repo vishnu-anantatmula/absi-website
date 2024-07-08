@@ -52,9 +52,7 @@ type MenuItemProps = {
 };
 
 function MenuItem({ name, style, isOpen, setIsOpen }: MenuItemProps) {
-  // Switch statement here evaluating if name is equal to string, set the to attribute on the Link element to the variable that will be declared in the switch statement
-
-  let path;
+  let path = '';
 
   switch (name) {
     case 'Menu':
@@ -70,6 +68,12 @@ function MenuItem({ name, style, isOpen, setIsOpen }: MenuItemProps) {
       break;
     case 'Customer Portal':
       path = '/portal';
+      break;
+    case '(703) 661-4280':
+      path = 'tel:703-661-4280';
+      break;
+    case 'support@absi1.com':
+      path = 'mailto:support@absi1.com';
       break;
   }
 
@@ -99,6 +103,16 @@ function MenuItem({ name, style, isOpen, setIsOpen }: MenuItemProps) {
           {name}
         </div>
       </HashLink>
+    );
+
+  if (name === '(703) 661-4280' || name === 'support@absi1.com')
+    return (
+      <Link to={path} className="cursor-pointer">
+        <div
+          className={`px-6 py-3 text-2xl font-semibold border-b-2 border-cyan-500 ${style}`}>
+          {name}
+        </div>
+      </Link>
     );
 
   return (
