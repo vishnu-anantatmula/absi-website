@@ -4,7 +4,6 @@ import { ServicesLinks } from './ServicesLinks';
 import { useState } from 'react';
 import { PortalLinks } from './PortalLinks';
 import { HashLink } from 'react-router-hash-link';
-import { Footer } from './Footer';
 
 type Props = {
   isOpen: boolean;
@@ -72,7 +71,6 @@ export function NavBar({ isOpen, setIsOpen }: Props) {
         </header>
       </div>
       <Outlet />
-      <Footer />
     </div>
   );
 }
