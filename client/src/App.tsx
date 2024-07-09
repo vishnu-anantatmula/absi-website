@@ -4,6 +4,7 @@ import { Home } from './Pages/Home';
 import { useState } from 'react';
 import { Menu } from './Pages/Menu';
 import ContactPage from './Components/Contact/ContactPage';
+import { CustomerPortal } from './Pages/CustomerPortal';
 
 export default function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,11 +14,10 @@ export default function App() {
       <Route
         path="/"
         element={<NavBar isOpen={isOpen} setIsOpen={setIsOpen} />}>
+        <Route index element={<Home isOpen={isOpen} setIsOpen={setIsOpen} />} />
         <Route
-          index
-          element={
-            isOpen ? <Menu isOpen={isOpen} setIsOpen={setIsOpen} /> : <Home />
-          }
+          path="portal"
+          element={<CustomerPortal isOpen={isOpen} setIsOpen={setIsOpen} />}
         />
         <Route path="/contact" element={<ContactPage />} />
       </Route>
