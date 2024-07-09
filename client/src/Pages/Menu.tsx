@@ -61,7 +61,7 @@ function MenuItem({ name, style, isOpen, setIsOpen }: MenuItemProps) {
       path = '/';
       break;
     case 'Book a Consultation':
-      path = '/';
+      path = '/contact';
       break;
     case 'Our Services':
       path = '#services';

@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export function Booking() {
   return (
     <div className="grid place-items-center gap-6 px-4 mt-4 mb-2">
@@ -11,9 +13,11 @@ export function Booking() {
         </h3>
       </div>
       <div className="xl:basis-full">
-        <button className="font-semibold bg-blue-950 py-3 px-6 rounded-lg shadow-md basis-full text-white">
-          Book a Consultation
-        </button>
+        <Link to="/contact">
+          <button className="font-semibold bg-blue-950 py-3 px-6 rounded-lg shadow-md basis-full text-white">
+            Book a Consultation
+          </button>
+        </Link>
       </div>
     </div>
   );

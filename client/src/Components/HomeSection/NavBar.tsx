@@ -60,7 +60,7 @@ export function NavBar({ isOpen, setIsOpen }: Props) {
               <div className="flex items-center justify-end basis-1/3">
                 <div className="h-4/5 flex items-end">
                   <Link
-                    to="/"
+                    to="/contact"
                     className="xl:text-lg font-bold bg-blue-950 py-2 px-6 rounded-md shadow-lg text-white">
                     Book a Consultation
                   </Link>
