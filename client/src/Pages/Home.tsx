@@ -21,7 +21,7 @@ export function Home({ isOpen, setIsOpen }: Props) {
           <HeroImage />
           <Banner />
         </div>
-        <div className="xl:hidden">
+        <div className="lg:hidden">
           <div className="grid place-items-center gap-6">
             <Booking />
           </div>
@@ -29,7 +29,7 @@ export function Home({ isOpen, setIsOpen }: Props) {
             <About />
           </div>
         </div>
-        <div className="hidden xl:flex">
+        <div className="hidden lg:flex">
           <div className="grid gap-6 mt-6 basis-1/2">
             <About />
           </div>

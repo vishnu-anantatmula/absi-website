@@ -2,7 +2,6 @@ import { Routes, Route } from 'react-router-dom';
 import { NavBar } from './Components/HomeSection/NavBar';
 import { Home } from './Pages/Home';
 import { useState } from 'react';
-import { Menu } from './Pages/Menu';
 import ContactPage from './Components/Contact/ContactPage';
 import { CustomerPortal } from './Pages/CustomerPortal';
 
@@ -19,7 +18,10 @@ export default function App() {
           path="portal"
           element={<CustomerPortal isOpen={isOpen} setIsOpen={setIsOpen} />}
         />
-        <Route path="/contact" element={<ContactPage />} />
+        <Route
+          path="/contact"
+          element={<ContactPage isOpen={isOpen} setIsOpen={setIsOpen} />}
+        />
       </Route>
     </Routes>
   );

@@ -1,14 +1,22 @@
 import './contactPage.css';
 import ContactForm from './ContactForm';
 import { useState } from 'react';
+import { Menu } from '../../Pages/Menu';
 
-export default function ContactPage() {
+type Props = {
+  isOpen: boolean;
+  setIsOpen: (arg1: boolean) => void;
+};
+
+export default function ContactPage({ isOpen, setIsOpen }: Props) {
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
 
   const handleFormData = (onData: boolean) => {
     setIsFormSubmitted(onData);
     console.log(isFormSubmitted);
   };
+
+  if (isOpen) return <Menu isOpen={isOpen} setIsOpen={setIsOpen} />;
 
   return (
     <>

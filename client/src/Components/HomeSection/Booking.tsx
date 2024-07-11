@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 export function Booking() {
   return (
-    <div className="grid place-items-center gap-6 px-4 mt-4 mb-2">
+    <div className="grid place-items-center gap-6 px-4 md:px-12 mt-4 mb-2">
       <div className="xl:basis-full">
         <h2 className="font-semibold text-xl">Proud to be employee-owned.</h2>
       </div>
