@@ -1,7 +1,6 @@
 import { serviceMapArray } from './serviceMappingArray';
 import ServiceCard from './ServiceCard';
 
-
 export default function AllServiceCards() {
   const allCards = serviceMapArray.map((item) => {
     return (
