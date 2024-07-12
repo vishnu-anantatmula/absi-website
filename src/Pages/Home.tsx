@@ -16,6 +16,7 @@ export function Home({ isOpen, setIsOpen }: Props) {
 
   return (
     <div>
+      <p>Test</p>
       <div className="mt-2 grid gap-4 mb-12">
         <div className="flex flex-wrap w-full">
           <HeroImage />
