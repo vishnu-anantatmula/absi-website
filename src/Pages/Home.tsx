@@ -3,6 +3,7 @@ import { Booking } from '../Components/HomeSection/Booking';
 import { Banner } from '../Components/HomeSection/Banner';
 import { About } from '../Components/HomeSection/About';
 import { Menu } from './Menu';
+import { Consultations } from '../Components/HomeSection/Consultations';
 import Services from '../Components/ServicesSection/Services';
 import CustomerExperience from '../Components/CustomerExperience/CustomerExperience';
 
@@ -12,6 +13,11 @@ type Props = {
 };
 
 export function Home({ isOpen, setIsOpen }: Props) {
+  const description = [
+    'Entrust your building needs with the experienced and qualified team of Advanced Building Services today.',
+    'We offer free consultations!',
+  ];
+
   if (isOpen) return <Menu isOpen={isOpen} setIsOpen={setIsOpen} />;
 
   return (
@@ -42,6 +48,10 @@ export function Home({ isOpen, setIsOpen }: Props) {
       </div>
       <CustomerExperience />
       <Services />
+      <Consultations
+        description={description[0]}
+        buttonText="Book a Consultation"
+      />
     </div>
   );
 }
