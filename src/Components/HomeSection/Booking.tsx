@@ -13,10 +13,10 @@ export function Booking() {
         </h3>
       </div>
       <div className="xl:basis-full">
-        <Link to="/contact">
-          <button className="font-semibold bg-blue-950 py-3 px-6 rounded-lg shadow-md basis-full text-white">
-            Book a Consultation
-          </button>
+        <Link
+          to="/contact"
+          className="font-semibold bg-blue-950 py-3 px-6 rounded-lg shadow-md basis-full text-white hover:ring-2 hover:ring-cyan-950">
+          Book a Consultation
         </Link>
       </div>
     </div>

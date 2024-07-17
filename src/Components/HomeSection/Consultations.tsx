@@ -11,7 +11,7 @@ export function Consultations({ description, buttonText }: Props) {
       <p className="text-center text-lg lg:text-2xl">{description}</p>
       <Link
         to="/contact"
-        className="font-semibold bg-white py-3 px-6 rounded-lg shadow-md basis-full text-blue-950 text-xl">
+        className="font-semibold bg-white py-3 px-6 rounded-lg shadow-md basis-full text-blue-950 text-xl hover:scale-105">
         {buttonText}
       </Link>
     </div>
