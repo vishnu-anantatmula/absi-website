@@ -52,9 +52,6 @@ export function Home({ isOpen, setIsOpen }: Props) {
         description={description[0]}
         buttonText="Book a Consultation"
       />
-      <div className="text-center py-16">
-        Dummy Building Engineering Section
-      </div>
       <Consultations
         description={description[1]}
         buttonText="Book an Appointment"
