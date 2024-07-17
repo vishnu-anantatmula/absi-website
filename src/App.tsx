@@ -19,7 +19,7 @@ export default function App() {
           element={<CustomerPortal isOpen={isOpen} setIsOpen={setIsOpen} />}
         />
         <Route
-          path="/contact"
+          path="contact"
           element={<ContactPage isOpen={isOpen} setIsOpen={setIsOpen} />}
         />
       </Route>
