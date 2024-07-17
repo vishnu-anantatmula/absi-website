@@ -6,6 +6,7 @@ import { Menu } from './Menu';
 import { Consultations } from '../Components/HomeSection/Consultations';
 import Services from '../Components/ServicesSection/Services';
 import CustomerExperience from '../Components/CustomerExperience/CustomerExperience';
+import BuildingEngineering from '../Components/BuildingEngineering/BuildingEngineering';
 
 type Props = {
   isOpen: boolean;
@@ -52,6 +53,7 @@ export function Home({ isOpen, setIsOpen }: Props) {
         description={description[0]}
         buttonText="Book a Consultation"
       />
+      <BuildingEngineering />
       <Consultations
         description={description[1]}
         buttonText="Book an Appointment"

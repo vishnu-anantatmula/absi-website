@@ -7,7 +7,9 @@ export function ServicesLinks() {
       <HashLink to="#commercial-hvac">
         <HoverMenuItem name="Commercial HVAC" />
       </HashLink>
-      <HoverMenuItem name="Building Engineering" />
+      <HashLink to="#engineering">
+        <HoverMenuItem name="Building Engineering" />
+      </HashLink>
     </ul>
   );
 }

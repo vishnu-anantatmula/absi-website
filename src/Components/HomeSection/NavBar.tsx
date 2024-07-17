@@ -22,7 +22,9 @@ export function NavBar({ isOpen, setIsOpen }: Props) {
           <div className="flex justify-between">
             <div className="basis-2/3 lg:basis-1/3">
               <div className="w-full md:w-4/5 lg:4/5">
-                <img src="abs-logo-full.jpg" className="h-16 xl:h-24" />
+                <Link to="/">
+                  <img src="abs-logo-full.jpg" className="h-16 xl:h-24" />
+                </Link>
               </div>
             </div>
             <div className="grid place-items-center lg:hidden">
