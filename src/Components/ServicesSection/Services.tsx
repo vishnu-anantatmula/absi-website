@@ -16,7 +16,9 @@ export default function Services() {
           </p>
         </div>
         <div>
-          <h1 className="pb-3 text-xl" id="commercial-hvac">
+          <h1
+            className="text-2xl lg:text-3xl font-marven leading-9 py-3"
+            id="commercial-hvac">
             Commercial HVAC
           </h1>
           <div className="lg:flex flex-wrap lg:justify-between">
