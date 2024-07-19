@@ -19,7 +19,7 @@ export function LinkSection() {
           </Link>
         </li>
         <li>
-          <Link to="/portal">CONTACT US</Link>
+          <Link to="/contact">CONTACT US</Link>
         </li>
       </div>
     </ul>

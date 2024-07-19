@@ -17,7 +17,7 @@ export function NavBar({ isOpen, setIsOpen }: Props) {
 
   return (
     <div>
-      <div className="container py-4">
+      <div className="container py-4 font-maven text-lg">
         <header className="px-6 relative">
           <div className="flex justify-between">
             <div className="basis-2/3 lg:basis-1/3">
@@ -45,7 +45,7 @@ export function NavBar({ isOpen, setIsOpen }: Props) {
                 <HashLink
                   to="#services"
                   className="h-3/4 flex items-end text-lg font-bold pb-1 hover:text-blue-950">
-                  <span className="relative">Services</span>
+                  <span className="relative text-xl xl:text-2xl">Services</span>
                 </HashLink>
                 {isServicesActive && <ServicesLinks />}
               </div>
@@ -55,7 +55,7 @@ export function NavBar({ isOpen, setIsOpen }: Props) {
                 onMouseLeave={() => setIsPortalActive(false)}>
                 <Link
                   to="/portal"
-                  className="h-3/4 flex items-end text-lg font-bold pb-1 hover:text-blue-950">
+                  className="h-3/4 flex items-end text-xl xl:text-2xl font-bold pb-1 hover:text-blue-950">
                   Customer Portal
                 </Link>
                 {isPortalActive && <PortalLinks />}
@@ -64,7 +64,7 @@ export function NavBar({ isOpen, setIsOpen }: Props) {
                 <div className="h-4/5 flex items-end">
                   <Link
                     to="/contact"
-                    className="xl:text-lg font-bold bg-blue-950 py-2 px-6 rounded-md shadow-lg text-white hover:ring-2 hover:ring-cyan-950">
+                    className="xl:text-2xl font-bold bg-blue-950 py-2 px-6 rounded-md shadow-lg text-white hover:ring-2 hover:ring-cyan-950">
                     Book a Consultation
                   </Link>
                 </div>
