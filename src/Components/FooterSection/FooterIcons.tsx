@@ -1,4 +1,3 @@
-import { FaYelp } from 'react-icons/fa';
 import { Facebook } from './Facebook';
 import { LinkedIn } from './LinkedIn';
 import { Google } from './Google';
@@ -9,7 +8,6 @@ export function FooterIcons() {
       <Facebook />
       <LinkedIn />
       <Google />
-      <FaYelp className="text-blue-950 text-lg cursor-pointer" />
     </div>
   );
 }
