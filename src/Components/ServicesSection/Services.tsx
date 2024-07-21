@@ -4,11 +4,11 @@ import AllServiceCards from './AllServiceCards';
 export default function Services() {
   return (
     <>
-      <section className="service-section px-4 md:px-12" id="services">
+      <section
+        className="service-section px-4 md:px-12 font-maven"
+        id="services">
         <div className="py-10">
-          <h1 className="text-2xl lg:text-5xl font-marven leading-9 py-3">
-            SERVICES
-          </h1>
+          <h1 className="text-2xl lg:text-5xl leading-9 py-3">SERVICES</h1>
           <p className="font-hind text-xl">
             Our team of experienced professionals are IAQ certified, provide
             24-hour emergency response, and are available for temporary
@@ -17,7 +17,7 @@ export default function Services() {
         </div>
         <div>
           <h1
-            className="text-2xl lg:text-3xl font-marven leading-9 py-3"
+            className="text-2xl lg:text-3xl leading-9 py-3"
             id="commercial-hvac">
             Commercial HVAC
           </h1>

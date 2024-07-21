@@ -6,7 +6,7 @@ export default function BuildingEngineering() {
     <>
       <section className="engineering-section" id="engineering">
         <div className="py-10">
-          <h1 className="text-2xl lg:text-3xl font-marven leading-9 py-3">
+          <h1 className="text-2xl lg:text-3xl font-maven leading-9 py-3">
             Building Engineering
           </h1>
           <p className="font-maven text-xl">
