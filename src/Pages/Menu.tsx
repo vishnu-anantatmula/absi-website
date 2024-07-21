@@ -64,7 +64,7 @@ function MenuItem({ name, style, isOpen, setIsOpen }: MenuItemProps) {
       path = '/contact';
       break;
     case 'Our Services':
-      path = '#services';
+      path = '/#services';
       break;
     case 'Customer Portal':
       path = '/portal';
@@ -81,7 +81,7 @@ function MenuItem({ name, style, isOpen, setIsOpen }: MenuItemProps) {
     return (
       <Link to={path} className="cursor-pointer">
         <div
-          className={`px-6 py-3 text-2xl font-semibold border-b-2 border-cyan-500 ${style} flex justify-between`}>
+          className={`px-6 py-3 text-2xl font-semibold border-b-2 border-cyan-500 ${style} flex justify-between font-maven`}>
           <span>{name}</span>
           <span
             className="flex items-center"
@@ -99,7 +99,7 @@ function MenuItem({ name, style, isOpen, setIsOpen }: MenuItemProps) {
         className="cursor-pointer"
         onClick={() => setIsOpen(!isOpen)}>
         <div
-          className={`px-6 py-3 text-2xl font-semibold border-b-2 border-cyan-500 ${style} hover:bg-blue-950 hover:text-white`}>
+          className={`px-6 py-3 text-2xl font-semibold border-b-2 border-cyan-500 ${style} hover:bg-blue-950 hover:text-white font-maven`}>
           {name}
         </div>
       </HashLink>
@@ -109,7 +109,7 @@ function MenuItem({ name, style, isOpen, setIsOpen }: MenuItemProps) {
     return (
       <Link to={path} className="cursor-pointer">
         <div
-          className={`px-6 py-3 text-2xl font-semibold border-b-2 border-cyan-500 ${style} hover:bg-blue-950 hover:text-white`}>
+          className={`px-6 py-3 text-2xl font-semibold border-b-2 border-cyan-500 ${style} hover:bg-blue-950 hover:text-white font-maven`}>
           {name}
         </div>
       </Link>
@@ -121,7 +121,7 @@ function MenuItem({ name, style, isOpen, setIsOpen }: MenuItemProps) {
       className="cursor-pointer"
       onClick={() => setIsOpen(!isOpen)}>
       <div
-        className={`px-6 py-3 text-2xl font-semibold border-b-2 border-cyan-500 ${style} hover:bg-blue-950 hover:text-white`}>
+        className={`px-6 py-3 text-2xl font-semibold border-b-2 border-cyan-500 ${style} hover:bg-blue-950 hover:text-white font-maven`}>
         {name}
       </div>
     </Link>
