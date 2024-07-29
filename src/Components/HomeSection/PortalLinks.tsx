@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export function PortalLinks() {
   return (
-    <ul className="absolute cursor-pointer top-16 xl:top-20">
+    <ul className="absolute cursor-pointer top-16 xl:top-20 z-10">
       <Link to="https://customerabsi.blog/" target="_blank">
         <HoverMenuItem name="Login" />
       </Link>
