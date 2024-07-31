@@ -69,7 +69,7 @@ export function NavBar({ isOpen, setIsOpen }: Props) {
                 <div className="h-4/5 flex items-end">
                   <Link
                     to="/contact"
-                    className="text-lg xl:text-2xl font-bold bg-blue-950 py-2 px-6 rounded-md shadow-lg text-white hover:ring-2 hover:ring-cyan-950">
+                    className="text-lg xl:text-2xl font-bold bg-blue-950 py-2 px-6 rounded-md shadow-lg text-white hover:ring-2 ring-cyan-950 tracking-wide">
                     Book a Consultation
                   </Link>
                 </div>

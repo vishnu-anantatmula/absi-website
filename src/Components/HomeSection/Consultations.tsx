@@ -19,7 +19,7 @@ export function Consultations({ description, buttonText }: Props) {
         <Link
           onClick={handleBookingClick}
           to="/contact"
-          className="font-semibold bg-white py-3 px-6 rounded-lg shadow-md basis-full text-blue-950 text-2xl hover:scale-105">
+          className="font-semibold bg-white py-3 px-6 rounded-lg shadow-md basis-full text-blue-950 text-xl lg:text-2xl hover:scale-105">
           {buttonText}
         </Link>
       </div>
