@@ -6,7 +6,7 @@ export function Booking() {
   };
 
   return (
-    <div className="grid place-items-center gap-8 px-4 md:px-12 mt-4 mb-2 font-maven">
+    <div className="grid place-items-center px-6 gap-8 mt-4 mb-2 font-maven">
       <div className="xl:basis-full">
         <h2 className="font-semibold text-2xl">Proud to be employee-owned.</h2>
       </div>
