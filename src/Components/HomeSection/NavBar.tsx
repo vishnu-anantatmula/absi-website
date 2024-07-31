@@ -17,8 +17,8 @@ export function NavBar({ isOpen, setIsOpen }: Props) {
 
   return (
     <>
-      <div className="container py-4 font-maven">
-        <header className="px-6 relative">
+      <div className="container py-4 font-maven relative">
+        <header className="px-6">
           <div className="flex justify-between">
             <div className="basis-2/3 lg:basis-1/3">
               <div className="w-full md:w-4/5 lg:4/5">
@@ -39,7 +39,7 @@ export function NavBar({ isOpen, setIsOpen }: Props) {
               />
             </div>
             <div className="hidden lg:flex basis-2/3">
-              <div className="absolute right-0 top-0 font-bold hidden xl:flex">
+              <div className="absolute right-7 top-1 2xl:top-4 font-bold hidden xl:flex text-xl">
                 <span className="pr-6">(703) 661-4280</span>
                 <span>support@absi1.com</span>
               </div>
@@ -49,7 +49,7 @@ export function NavBar({ isOpen, setIsOpen }: Props) {
                 onMouseLeave={() => setIsServicesActive(false)}>
                 <HashLink
                   to="/#services"
-                  className="h-3/4 flex items-end text-lg xl:text-xl font-bold pb-1 hover:text-blue-950 hover:scale-105">
+                  className="h-3/4 flex items-end text-xl xl:text-2xl font-bold pb-1 hover:text-blue-950 hover:scale-105">
                   <span className="relative">Services</span>
                 </HashLink>
                 {isServicesActive && <ServicesLinks />}
@@ -60,7 +60,7 @@ export function NavBar({ isOpen, setIsOpen }: Props) {
                 onMouseLeave={() => setIsPortalActive(false)}>
                 <Link
                   to="/portal"
-                  className="h-3/4 flex items-end text-lg xl:text-xl font-bold pb-1 hover:text-blue-950 hover:scale-105">
+                  className="h-3/4 flex items-end text-xl xl:text-2xl font-bold pb-1 hover:text-blue-950 hover:scale-105">
                   Customer Portal
                 </Link>
                 {isPortalActive && <PortalLinks />}
@@ -69,7 +69,7 @@ export function NavBar({ isOpen, setIsOpen }: Props) {
                 <div className="h-4/5 flex items-end">
                   <Link
                     to="/contact"
-                    className="xl:text-lg font-bold bg-blue-950 py-2 px-6 rounded-md shadow-lg text-white hover:ring-2 hover:ring-cyan-950">
+                    className="text-lg xl:text-2xl font-bold bg-blue-950 py-2 px-6 rounded-md shadow-lg text-white hover:ring-2 hover:ring-cyan-950">
                     Book a Consultation
                   </Link>
                 </div>
