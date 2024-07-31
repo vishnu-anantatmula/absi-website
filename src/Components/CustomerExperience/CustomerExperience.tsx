@@ -4,10 +4,10 @@ import './customerExperience.css';
 export default function CustomerExperience() {
   return (
     <>
-      <div className="bg-BrandBlue py-10">
+      <div className="bg-BrandBlue py-11">
         <div className="customer-section">
           <div className="text-center pb-5">
-            <h1 className="text-white text-5xl py-5 font-hind">
+            <h1 className="text-white text-5xl pb-5 font-hind">
               CUSTOMER EXPERIENCE
             </h1>
             <span className="text-white py-3 text-2xl font-hind">

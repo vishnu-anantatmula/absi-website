@@ -11,7 +11,7 @@ export function Consultations({ description, buttonText }: Props) {
   };
 
   return (
-    <div className="grid place-items-center bg-blue-950 text-white py-10 gap-8 px-6 font-maven">
+    <div className="grid place-items-center bg-blue-950 text-white py-11 gap-8 px-6 font-maven">
       <p className="text-center text-2xl lg:text-3xl tracking-wider">
         {description}
       </p>

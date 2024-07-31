@@ -7,7 +7,7 @@ export default function Services() {
       <section
         className="service-section px-4 md:px-12 font-maven"
         id="services">
-        <div className="py-10">
+        <div className="pb-10">
           <h1 className="font-semibold text-3xl lg:text-5xl leading-9 py-3 text-blue-950">
             SERVICES
           </h1>
