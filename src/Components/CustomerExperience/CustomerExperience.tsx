@@ -7,7 +7,7 @@ export default function CustomerExperience() {
       <div className="bg-BrandBlue py-11">
         <div className="customer-section container px-6">
           <div className="text-center pb-5">
-            <h1 className="text-white text-5xl pb-5 font-hind">
+            <h1 className="text-white text-5xl pb-6 font-hind">
               Customer Experience
             </h1>
             <span className="text-white py-3 text-2xl font-hind">
@@ -15,7 +15,7 @@ export default function CustomerExperience() {
               What our clients are saying about us
             </span>
           </div>
-          <div className="flex justify-center">
+          <div className="flex justify-center mt-10">
             <div className="flex flex-nowrap space-x-8 overflow-x-auto">
               <CustomerCard
                 quote="A terrific place of praise"
