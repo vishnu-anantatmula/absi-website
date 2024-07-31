@@ -8,7 +8,7 @@ export default function CustomerExperience() {
         <div className="customer-section">
           <div className="text-center pb-5">
             <h1 className="text-white text-5xl py-5 font-hind">
-              CUSTOMER EXPERIENCE
+              Customer Experience
             </h1>
             <span className="text-white py-3 text-2xl font-hind">
               We strive for experienced and diligent quantity for every project.

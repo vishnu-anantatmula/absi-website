@@ -4,7 +4,7 @@ import './buildingEngineering.css';
 export default function BuildingEngineering() {
   return (
     <>
-      <section className="engineering-section" id="engineering">
+      <section className="engineering-section px-4 md:px-12" id="engineering">
         <div className="py-10">
           <h1 className="text-2xl lg:text-3xl font-maven leading-9 py-3 font-semibold">
             Building Engineering

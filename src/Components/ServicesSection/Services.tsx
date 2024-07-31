@@ -9,7 +9,7 @@ export default function Services() {
         id="services">
         <div className="py-10">
           <h1 className="font-semibold text-3xl lg:text-5xl leading-9 py-3 text-blue-950">
-            SERVICES
+            Services
           </h1>
           <p className="text-xl font-semibold text-blue-950">
             Our team of experienced professionals are IAQ certified, provide

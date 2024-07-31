@@ -40,8 +40,8 @@ export function NavBar({ isOpen, setIsOpen }: Props) {
             </div>
             <div className="hidden lg:flex basis-2/3">
               <div className="absolute right-0 top-0 font-bold hidden xl:flex">
-                <span className="pr-6">(703) 661-4280</span>
-                <span>support@absi1.com</span>
+                <span className="pr-6 text-xl">(703) 661-4280</span>
+                <span className="text-xl">support@absi1.com</span>
               </div>
               <div
                 className="grid place-items-center basis-1/3"
@@ -49,8 +49,10 @@ export function NavBar({ isOpen, setIsOpen }: Props) {
                 onMouseLeave={() => setIsServicesActive(false)}>
                 <HashLink
                   to="/#services"
-                  className="h-3/4 flex items-end text-lg xl:text-xl font-bold pb-1 hover:text-blue-950 hover:scale-105">
-                  <span className="relative">Services</span>
+                  className="h-3/4 flex items-end text-lg xl:text-xl font-medium pb-1 hover:text-blue-950 hover:scale-105">
+                  <span className="relative text-2xl xl:text-3xl">
+                    Services
+                  </span>
                 </HashLink>
                 {isServicesActive && <ServicesLinks />}
               </div>
@@ -60,8 +62,8 @@ export function NavBar({ isOpen, setIsOpen }: Props) {
                 onMouseLeave={() => setIsPortalActive(false)}>
                 <Link
                   to="/portal"
-                  className="h-3/4 flex items-end text-lg xl:text-xl font-bold pb-1 hover:text-blue-950 hover:scale-105">
-                  Customer Portal
+                  className="h-3/4 flex items-end text-lg xl:text-xl font-medium pb-1 hover:text-blue-950 hover:scale-105">
+                  <span className="text-2xl xl:text-3xl">Customer Portal</span>
                 </Link>
                 {isPortalActive && <PortalLinks />}
               </div>
