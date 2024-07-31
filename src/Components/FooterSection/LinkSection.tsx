@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 export function LinkSection() {
   return (
-    <ul className="hidden lg:flex  basis-1/3 pr-12">
+    <ul className="hidden lg:flex basis-1/3">
       <div className="basis-1/2"></div>
       <div className="basis-1/2 flex flex-col justify-center gap-3">
         <li className="font-semibold">Quick Links</li>

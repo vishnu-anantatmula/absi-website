@@ -10,7 +10,7 @@ export function LandingPage() {
         <HeroImage />
         <Banner />
       </div>
-      <div className="lg:hidden">
+      <div className="lg:hidden container">
         <div className="grid place-items-center gap-6">
           <Booking />
         </div>
@@ -18,7 +18,7 @@ export function LandingPage() {
           <About />
         </div>
       </div>
-      <div className="hidden lg:flex">
+      <div className="hidden lg:flex container">
         <div className="grid gap-6 mt-6 basis-1/2">
           <About />
         </div>

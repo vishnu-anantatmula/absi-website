@@ -2,7 +2,7 @@ import { FooterIcons } from './FooterIcons';
 
 export function MobileSection() {
   return (
-    <div className="m-auto lg:basis-1/3 lg:pl-12">
+    <div className="m-auto lg:basis-1/3">
       <h1 className="font-bold text-xl mb-2">
         Advanced Building Services, Inc.
       </h1>

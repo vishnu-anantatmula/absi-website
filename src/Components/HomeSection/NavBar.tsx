@@ -16,7 +16,7 @@ export function NavBar({ isOpen, setIsOpen }: Props) {
   const [isPortalActive, setIsPortalActive] = useState(false);
 
   return (
-    <div>
+    <>
       <div className="container py-4 font-maven">
         <header className="px-6 relative">
           <div className="flex justify-between">
@@ -80,6 +80,6 @@ export function NavBar({ isOpen, setIsOpen }: Props) {
       </div>
       <Outlet />
       <Footer />
-    </div>
+    </>
   );
 }

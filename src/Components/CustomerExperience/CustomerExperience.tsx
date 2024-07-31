@@ -5,7 +5,7 @@ export default function CustomerExperience() {
   return (
     <>
       <div className="bg-BrandBlue py-11">
-        <div className="customer-section">
+        <div className="customer-section container px-6">
           <div className="text-center pb-5">
             <h1 className="text-white text-5xl pb-5 font-hind">
               CUSTOMER EXPERIENCE
