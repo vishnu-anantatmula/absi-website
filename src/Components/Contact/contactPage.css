@@ -1,8 +1,18 @@
 .contact-section {
-  max-width: 90%;
+  max-width: 1280px;
   margin: 0 auto;
+}
+
+.contact-header {
+  font-size: 28px;
 }
 
 .contact-image-container {
   width: 75%;
+}
+
+@media screen and (width >=1024px) {
+  .contact-header {
+    font-size: 62px;
+  }
 }

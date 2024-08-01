@@ -23,7 +23,7 @@ export default function ContactPage({ isOpen, setIsOpen }: Props) {
       <div className="w-full lg:hidden pb-5">
         <img className="w-full" src="./images/form-image-mobile.png" />
       </div>
-      <div className="contact-section">
+      <div className="contact-section mt-12 px-6">
         <div className="flex">
           <div className="w-full lg:w-6/12">
             {isFormSubmitted ? (
@@ -37,11 +37,11 @@ export default function ContactPage({ isOpen, setIsOpen }: Props) {
               </div>
             ) : (
               <>
-                <h1 className="font-hind text-4xl font-medium">
+                <h1 className="font-hind inline-block contact-header font-medium align-text-top">
                   How can we help?
                 </h1>
                 <div>
-                  <span className="block font-maven py-5">
+                  <span className="block font-maven py-5 lg:pr-10">
                     Once we receive the details of your project, a
                     representative will reach out to schedule a meeting. We look
                     forward to partnering with you.
