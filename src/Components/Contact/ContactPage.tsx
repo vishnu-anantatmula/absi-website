@@ -37,16 +37,18 @@ export default function ContactPage({ isOpen, setIsOpen }: Props) {
               </div>
             ) : (
               <>
-                <h1 className="font-hind inline-block contact-header font-medium align-text-top">
+                <h1 className="font-maven  leading-none inline-block contact-header font-bold align-text-top">
                   How can we help?
                 </h1>
                 <div>
-                  <span className="block font-maven py-5 lg:pr-10">
+                  <span className="block font-maven section-b-padding lg:pr-10">
                     Once we receive the details of your project, a
                     representative will reach out to schedule a meeting. We look
                     forward to partnering with you.
                   </span>
-                  <span className="block pb-5">*Required Fields</span>
+                  <span className="block padding-bottom-30">
+                    *Required Fields
+                  </span>
                 </div>
                 <ContactForm onData={handleFormData} />
               </>

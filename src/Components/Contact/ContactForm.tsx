@@ -66,7 +66,7 @@ export default function ContactForm({ onData }: ContactFormProps) {
   return (
     <>
       <form onSubmit={sendEmail}>
-        <div className="w-full space-y-8">
+        <div className="w-full space-y-seven-half">
           <div className="flex flex-wrap lg:flex-nowrap w-full">
             <div className="flex-wrap w-full lg:w-1/2">
               <span className="font-bold">First Name*</span>
@@ -78,7 +78,7 @@ export default function ContactForm({ onData }: ContactFormProps) {
                 onChange={handleChange}
                 required></input>
             </div>
-            <div className="w-full lg:w-1/2 mt-8 lg:mt-0">
+            <div className="w-full lg:w-1/2 margin-top-30 lg:mt-0">
               <span className="font-bold">Last Name*</span>
               <input
                 className="outline outline-1 w-full lg:w-10/12 pt-2 pb-1 pl-3 placeholder-BrandBlueText rounded"
@@ -96,7 +96,7 @@ export default function ContactForm({ onData }: ContactFormProps) {
               </span>
               <input
                 className="outline outline-1 w-full pt-2 pb-1 pl-3 placeholder-BrandBlueText rounded"
-                placeholder="Property Manager"
+                placeholder="Title"
                 name="role"
                 value={formData.role}
                 onChange={handleChange}></input>
@@ -127,7 +127,7 @@ export default function ContactForm({ onData }: ContactFormProps) {
                   onChange={handlePhoneChange}
                   required></input>
               </div>
-              <div className="w-full lg:w-1/2 mt-8 lg:mt-0">
+              <div className="w-full lg:w-1/2 margin-top-30 lg:mt-0">
                 <span className="font-bold">Preferred contact method*</span>
                 <select
                   className="outline outline-1 w-full lg:w-10/12 pt-2 pb-1 pl-3 text-BrandBlueText rounded h-9"
@@ -139,7 +139,7 @@ export default function ContactForm({ onData }: ContactFormProps) {
                     Select an option
                   </option>
                   <option value="Email">Email</option>
-                  <option value="Phone Number">Phone Number</option>
+                  <option value="Phone Number">Phone</option>
                 </select>
               </div>
             </div>
