@@ -23,21 +23,32 @@ export default function ContactPage({ isOpen, setIsOpen }: Props) {
       <div className="w-full lg:hidden pb-5">
         <img className="w-full" src="./images/form-image-mobile.png" />
       </div>
-      <div className="contact-section mt-12 px-6">
+      <div className="contact-section mt-10 px-6">
         <div className="flex">
           <div className="w-full lg:w-6/12">
             {isFormSubmitted ? (
-              <div className="pt-5">
-                <h1 className="font-hind text-4xl font-medium">
-                  Message received
-                </h1>
-                <span className="block pt-10">
-                  A member of our team will reach out soon.
-                </span>
-              </div>
+              <>
+                <div className="pt-5">
+                  <h1 className="font-maven contact-header font-medium">
+                    Message received
+                  </h1>
+                  <span className="block pt-11 font-maven">
+                    A member of our team will reach out soon.
+                  </span>
+                </div>
+                <div className="border-4 border-BrandBlue my-7 rounded rounded-lg">
+                  <h1 className="text-2xl font-maven pt-5 text-center">
+                    Proud to be employee-owned.
+                  </h1>
+                  <span className="block text-base font-maven px-2 section-b-padding text-center">
+                    Serving the Washington DC, Maryland, and Virginia area
+                    since&nbsp;1997.
+                  </span>
+                </div>
+              </>
             ) : (
               <>
-                <h1 className="font-maven  leading-none inline-block contact-header font-bold align-text-top">
+                <h1 className="font-maven leading-none inline-block contact-header font-bold align-text-top">
                   How can we help?
                 </h1>
                 <div>
