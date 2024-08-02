@@ -62,12 +62,12 @@ export default function ContactPage({ isOpen, setIsOpen }: Props) {
               <h1 className="text-3xl pt-5 text-center">
                 Proud to be employee-owned.
               </h1>
-              <span className="text-lg px-10 py-5 text-center">
-                Serving the Washington DC, Maryland, and Virginia area since
-                1997.
+              <span className="text-lg px-10 section-b-padding text-center">
+                Serving the Washington DC, Maryland, and Virginia area
+                since&nbsp;1997.
               </span>
               <div className="flex flex-wrap text-center">
-                <span className="w-full font-bold">
+                <span className="text-xl w-full font-bold">
                   Advanced Building Services, Inc.
                 </span>
                 <span className="w-full">23475 Rock Haven Way #135</span>
