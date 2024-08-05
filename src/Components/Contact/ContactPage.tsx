@@ -9,7 +9,7 @@ type Props = {
 };
 
 export default function ContactPage({ isOpen, setIsOpen }: Props) {
-  const [isFormSubmitted, setIsFormSubmitted] = useState(true);
+  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
 
   const handleFormData = (onData: boolean) => {
     setIsFormSubmitted(onData);
