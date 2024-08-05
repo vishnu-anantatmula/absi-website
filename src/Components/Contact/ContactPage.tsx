@@ -23,30 +23,43 @@ export default function ContactPage({ isOpen, setIsOpen }: Props) {
       <div className="w-full lg:hidden pb-5">
         <img className="w-full" src="./images/form-image-mobile.png" />
       </div>
-      <div className="contact-section">
+      <div className="contact-section mt-10 px-6">
         <div className="flex">
           <div className="w-full lg:w-6/12">
             {isFormSubmitted ? (
-              <div className="pt-5">
-                <h1 className="font-hind text-4xl font-medium">
-                  Message received
-                </h1>
-                <span className="block pt-10">
-                  A member of our team will reach out soon.
-                </span>
-              </div>
+              <>
+                <div className="pt-5">
+                  <h1 className="font-maven contact-header font-medium">
+                    Message received
+                  </h1>
+                  <span className="block pt-11 font-maven">
+                    A member of our team will reach out soon.
+                  </span>
+                </div>
+                <div className="border-4 border-BrandBlue my-7 rounded rounded-lg">
+                  <h1 className="text-2xl font-maven pt-5 text-center">
+                    Proud to be employee-owned.
+                  </h1>
+                  <span className="block text-base font-maven px-2 section-b-padding text-center">
+                    Serving the Washington DC, Maryland, and Virginia area
+                    since&nbsp;1997.
+                  </span>
+                </div>
+              </>
             ) : (
               <>
-                <h1 className="font-hind text-4xl font-medium">
+                <h1 className="font-maven leading-none inline-block contact-header font-bold align-text-top">
                   How can we help?
                 </h1>
                 <div>
-                  <span className="block font-maven py-5">
+                  <span className="block font-maven section-b-padding lg:pr-10">
                     Once we receive the details of your project, a
                     representative will reach out to schedule a meeting. We look
                     forward to partnering with you.
                   </span>
-                  <span className="block pb-5">*Required Fields</span>
+                  <span className="block padding-bottom-30">
+                    *Required Fields
+                  </span>
                 </div>
                 <ContactForm onData={handleFormData} />
               </>
@@ -60,12 +73,12 @@ export default function ContactPage({ isOpen, setIsOpen }: Props) {
               <h1 className="text-3xl pt-5 text-center">
                 Proud to be employee-owned.
               </h1>
-              <span className="text-lg px-10 py-5 text-center">
-                Serving the Washington DC, Maryland, and Virginia area since
-                1997.
+              <span className="text-lg px-10 section-b-padding text-center">
+                Serving the Washington DC, Maryland, and Virginia area
+                since&nbsp;1997.
               </span>
               <div className="flex flex-wrap text-center">
-                <span className="w-full font-bold">
+                <span className="text-xl w-full font-bold">
                   Advanced Building Services, Inc.
                 </span>
                 <span className="w-full">23475 Rock Haven Way #135</span>

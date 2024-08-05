@@ -1,8 +1,40 @@
 .contact-section {
-  max-width: 90%;
+  max-width: 1280px;
   margin: 0 auto;
+}
+
+.contact-header {
+  font-size: 24px;
 }
 
 .contact-image-container {
   width: 75%;
+}
+
+.section-b-padding {
+  padding: 30px 0;
+}
+
+.padding-bottom-30 {
+  padding-bottom: 30px;
+}
+
+.margin-top-30 {
+  margin-top: 30px;
+}
+
+.space-y-seven-half > * + * {
+  margin-top: 30px;
+}
+
+@media screen and (width >=1024px) {
+  .contact-header {
+    font-size: 64px;
+  }
+}
+
+@media screen and (width >=768px) {
+  .contact-header {
+    font-size: 55px;
+  }
 }
