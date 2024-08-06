@@ -3,7 +3,7 @@ import { PortalLink } from './PortalLink';
 
 export function Payment() {
   return (
-    <div className="container flex flex-wrap gap-10 py-6 lg:py-2 lg:px-6">
+    <div className="container flex flex-wrap gap-10 py-6 lg:py-2 md:px-6">
       <div className="basis-full">
         <Title title="Payment Portal" />
       </div>
