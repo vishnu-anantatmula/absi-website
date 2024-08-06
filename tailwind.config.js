@@ -23,6 +23,7 @@ export default {
         center: true,
       },
       screens: {
+        400: '400px',
         800: '800px',
         900: '900px',
         1066: '1066px',
