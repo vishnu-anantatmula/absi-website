@@ -11,7 +11,7 @@ export function CustomerPortal({ isOpen, setIsOpen }: Props) {
   if (isOpen) return <Menu isOpen={isOpen} setIsOpen={setIsOpen} />;
 
   return (
-    <div className="flex flex-wrap divide-y-2 md:divide-x-2 md:divide-y-0 divide-red-600 min-h-96 mt-6 gap-4  md:flex-nowrap container px-6">
+    <div className="flex flex-wrap divide-y-2 900:divide-x-2 900:divide-y-0 divide-red-600 min-h-96 mt-6 gap-4  900:flex-nowrap container px-6">
       <div className="basis-1/2">
         <Customer />
       </div>
