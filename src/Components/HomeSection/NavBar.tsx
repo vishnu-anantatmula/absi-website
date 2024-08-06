@@ -17,8 +17,8 @@ export function NavBar({ isOpen, setIsOpen }: Props) {
 
   return (
     <>
-      <div className="container py-4 font-maven relative">
-        <header className="px-6">
+      <div className="py-4 font-maven fixed top-0 left-0 right-0 z-50 bg-white mt-0">
+        <header className="container px-6 relative">
           <div className="flex justify-between">
             <div className="basis-2/3 lg:basis-1/3">
               <div className="w-full md:w-4/5 lg:4/5">
@@ -39,7 +39,7 @@ export function NavBar({ isOpen, setIsOpen }: Props) {
               />
             </div>
             <div className="hidden lg:flex basis-2/3">
-              <div className="absolute right-7 top-1 2xl:top-4 font-bold hidden xl:flex text-xl">
+              <div className="absolute right-7 bottom-16 font-bold hidden xl:flex text-xl">
                 <span className="pr-6">(703) 661-4280</span>
                 <span>support@absi1.com</span>
               </div>
@@ -78,7 +78,9 @@ export function NavBar({ isOpen, setIsOpen }: Props) {
           </div>
         </header>
       </div>
-      <Outlet />
+      <div className="mt-32">
+        <Outlet />
+      </div>
       <Footer />
     </>
   );
