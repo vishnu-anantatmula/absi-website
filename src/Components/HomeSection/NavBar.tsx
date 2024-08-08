@@ -23,10 +23,10 @@ export function NavBar({ isOpen, setIsOpen }: Props) {
             <div className="basis-2/3 lg:basis-1/3">
               <div className="w-full md:w-4/5 lg:4/5">
                 <Link to="/">
-                  <div className="relative pb-1/4">
+                  <div className="h-20">
                     <img
-                      src="abs-logo-full.jpg"
-                      className="absolute w-full h-full object-contain bottom-0"
+                      src="images/absi-logo.webp"
+                      className="object-contain max-w-full max-h-full w-auto h-auto"
                     />
                   </div>
                 </Link>
