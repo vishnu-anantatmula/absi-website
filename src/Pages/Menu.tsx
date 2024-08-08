@@ -82,12 +82,14 @@ function MenuItem({ name, style, isOpen, setIsOpen }: MenuItemProps) {
       <Link to={path} className="cursor-pointer">
         <div
           className={`px-6 py-3 text-2xl font-semibold border-b-2 border-cyan-500 ${style} flex justify-between font-maven`}>
-          <span>{name}</span>
-          <span
-            className="flex items-center"
-            onClick={() => setIsOpen(!isOpen)}>
-            <GoXCircle className="text-blue-950 bg-white rounded-full text-4xl" />
-          </span>
+          <div className="container flex justify-between px-6">
+            <div>{name}</div>
+            <div
+              className="flex items-center"
+              onClick={() => setIsOpen(!isOpen)}>
+              <GoXCircle className="text-blue-950 bg-white rounded-full text-4xl" />
+            </div>
+          </div>
         </div>
       </Link>
     );
@@ -100,7 +102,7 @@ function MenuItem({ name, style, isOpen, setIsOpen }: MenuItemProps) {
         onClick={() => setIsOpen(!isOpen)}>
         <div
           className={`px-6 py-3 text-2xl font-semibold border-b-2 border-cyan-500 ${style} hover:bg-blue-950 hover:text-white font-maven`}>
-          {name}
+          <div className="container px-6">{name}</div>
         </div>
       </HashLink>
     );
@@ -110,7 +112,7 @@ function MenuItem({ name, style, isOpen, setIsOpen }: MenuItemProps) {
       <Link to={path} className="cursor-pointer">
         <div
           className={`px-6 py-3 text-2xl font-semibold border-b-2 border-cyan-500 ${style} hover:bg-blue-950 hover:text-white font-maven`}>
-          {name}
+          <div className="container px-6">{name}</div>
         </div>
       </Link>
     );
@@ -122,7 +124,7 @@ function MenuItem({ name, style, isOpen, setIsOpen }: MenuItemProps) {
       onClick={() => setIsOpen(!isOpen)}>
       <div
         className={`px-6 py-3 text-2xl font-semibold border-b-2 border-cyan-500 ${style} hover:bg-blue-950 hover:text-white font-maven`}>
-        {name}
+        <div className="container px-6">{name}</div>
       </div>
     </Link>
   );
