@@ -17,7 +17,7 @@ export function NavBar({ isOpen, setIsOpen }: Props) {
 
   return (
     <>
-      <div className="py-4 font-maven fixed top-0 left-0 right-0 z-50 bg-white mt-0">
+      <div className="py-4 font-maven fixed top-0 left-0 right-0 z-50 bg-white mt-0 border-b-2 border-b-black">
         <header className="container px-6 relative">
           <div className="flex justify-between">
             <div className="basis-2/3 lg:basis-1/3">
@@ -78,7 +78,7 @@ export function NavBar({ isOpen, setIsOpen }: Props) {
           </div>
         </header>
       </div>
-      <div className="mt-32">
+      <div className="mt-28">
         <Outlet />
       </div>
       <Footer />
