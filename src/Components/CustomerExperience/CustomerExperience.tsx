@@ -18,22 +18,16 @@ export default function CustomerExperience() {
           <div className="flex justify-center mt-10">
             <div className="flex flex-nowrap space-x-8 overflow-x-auto">
               <CustomerCard
-                quote="A terrific place of praise"
-                profileImage="./images/profile-icon.png"
-                name="Name"
-                description="Description of project or city"
+                quote="Excellent to work with, very professional. Able to help solve a long-standing building over heating problem. ABS, Inc is a reliable company for property management companies and managers."
+                name="Building Manager"
               />
               <CustomerCard
-                quote="A fantastic bit of feedback"
-                profileImage="./images/profile-icon.png"
-                name="Name"
-                description="Description of project or city"
+                quote="ABSI is easy and efficient to work with - All of their employees are very knowledgeable. We use them on approximately 10 properties and have nothing but positive things to say about their work."
+                name="DS"
               />
               <CustomerCard
-                quote="A genuinely glowing review"
-                profileImage="./images/profile-icon.png"
-                name="Name"
-                description="Description of project or city"
+                quote="Advanced building services went above and beyond with their service"
+                name="Clara B."
               />
             </div>
           </div>
