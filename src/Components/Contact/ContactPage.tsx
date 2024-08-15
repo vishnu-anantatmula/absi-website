@@ -19,7 +19,7 @@ export default function ContactPage({ isOpen, setIsOpen }: Props) {
   if (isOpen) return <Menu isOpen={isOpen} setIsOpen={setIsOpen} />;
 
   return (
-    <>
+    <div className="container">
       <div className="w-full lg:hidden pb-5">
         <img className="w-full" src="./images/form-image-mobile.png" />
       </div>
@@ -89,6 +89,6 @@ export default function ContactPage({ isOpen, setIsOpen }: Props) {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

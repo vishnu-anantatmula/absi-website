@@ -9,6 +9,6 @@
 
 @media screen and (width >=1024px) {
   .customer-card-container {
-    min-width: 425px;
+    width: 425px;
   }
 }
