@@ -21,7 +21,7 @@ export default function ContactPage({ isOpen, setIsOpen }: Props) {
   return (
     <div className="container">
       <div className="w-full lg:hidden pb-5">
-        <img className="w-full" src="./images/form-image-mobile.png" />
+        <img className="w-full" src="./images/form-image-mobile.png" alt="" />
       </div>
       <div className="contact-section mt-10 px-6">
         <div className="flex">
@@ -67,7 +67,7 @@ export default function ContactPage({ isOpen, setIsOpen }: Props) {
           </div>
           <div className="hidden lg:w-6/12 lg:flex flex-wrap justify-end">
             <div className="w-10/12">
-              <img src="./images/form-image.png" className="w-full" />
+              <img src="./images/form-image.png" className="w-full" alt="" />
             </div>
             <div className="flex flex-wrap justify-center px-10 w-10/12">
               <h1 className="text-3xl pt-5 text-center">

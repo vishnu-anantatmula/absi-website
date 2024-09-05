@@ -5,6 +5,7 @@ export function HeroImage() {
         <img
           src="images/hero.webp"
           className="absolute h-full w-full object-cover"
+          alt=""
         />
       </div>
     </div>
