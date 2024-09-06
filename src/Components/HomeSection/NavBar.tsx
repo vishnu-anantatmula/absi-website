@@ -27,6 +27,7 @@ export function NavBar({ isOpen, setIsOpen }: Props) {
                     <img
                       src="images/absi-logo.webp"
                       className="object-contain max-w-full max-h-full w-auto h-auto"
+                      alt="asbi-logo"
                     />
                   </div>
                 </Link>

@@ -69,8 +69,11 @@ export default function ContactForm({ onData }: ContactFormProps) {
         <div className="w-full space-y-seven-half">
           <div className="flex flex-wrap lg:flex-nowrap w-full">
             <div className="flex-wrap w-full lg:w-1/2">
-              <span className="font-bold">First Name*</span>
+              <label htmlFor="firstName" className="font-bold">
+                First Name*
+              </label>
               <input
+                id="firstName"
                 className="outline outline-1 w-full lg:w-10/12 pt-2 pb-1 pl-3 placeholder-BrandBlueText rounded"
                 placeholder="John"
                 name="firstName"
@@ -79,8 +82,11 @@ export default function ContactForm({ onData }: ContactFormProps) {
                 required></input>
             </div>
             <div className="w-full lg:w-1/2 margin-top-30 lg:mt-0">
-              <span className="font-bold">Last Name*</span>
+              <label htmlFor="lastName" className="font-bold">
+                Last Name*
+              </label>
               <input
+                id="lastName"
                 className="outline outline-1 w-full lg:w-10/12 pt-2 pb-1 pl-3 placeholder-BrandBlueText rounded"
                 placeholder="Smith"
                 name="lastName"
@@ -91,10 +97,11 @@ export default function ContactForm({ onData }: ContactFormProps) {
           </div>
           <div>
             <div className="w-full lg:w-11/12">
-              <span className="font-bold">
+              <label htmlFor="yourRole" className="font-bold">
                 Your title or role for this project
-              </span>
+              </label>
               <input
+                id="yourRole"
                 className="outline outline-1 w-full pt-2 pb-1 pl-3 placeholder-BrandBlueText rounded"
                 placeholder="Title"
                 name="role"
@@ -104,8 +111,11 @@ export default function ContactForm({ onData }: ContactFormProps) {
           </div>
           <div>
             <div className="w-full lg:w-11/12">
-              <span className="font-bold">Email Address*</span>
+              <label htmlFor="userEmail" className="font-bold">
+                Email Address*
+              </label>
               <input
+                id="userEmail"
                 className="outline outline-1 w-full pt-2 pb-1 pl-3 placeholder-BrandBlueText rounded"
                 placeholder="email@domain.com"
                 name="userEmail"
@@ -117,8 +127,11 @@ export default function ContactForm({ onData }: ContactFormProps) {
           <div>
             <div className="flex flex-wrap lg:flex-nowrap">
               <div className="w-full lg:w-1/2">
-                <span className="font-bold">Phone number*</span>
+                <label htmlFor="userPhone" className="font-bold">
+                  Phone number*
+                </label>
                 <input
+                  id="userPhone"
                   className="outline outline-1 w-full lg:w-10/12 pt-2 pb-1 pl-3 placeholder-BrandBlueText rounded"
                   placeholder="(XXX) XXX-XXXX"
                   name="userPhone"
@@ -128,8 +141,11 @@ export default function ContactForm({ onData }: ContactFormProps) {
                   required></input>
               </div>
               <div className="w-full lg:w-1/2 margin-top-30 lg:mt-0">
-                <span className="font-bold">Preferred contact method*</span>
+                <label htmlFor="contactMethod" className="font-bold">
+                  Preferred contact method*
+                </label>
                 <select
+                  id="contactMethod"
                   className="outline outline-1 w-full lg:w-10/12 pt-2 pb-1 pl-3 text-BrandBlueText rounded h-9"
                   required
                   name="contactMethod"
@@ -146,8 +162,11 @@ export default function ContactForm({ onData }: ContactFormProps) {
           </div>
           <div>
             <div className="w-full lg:w-11/12">
-              <span className="font-bold">Project type*</span>
+              <label htmlFor="projectType" className="font-bold">
+                Project type*
+              </label>
               <select
+                id="projectType"
                 className="outline outline-1 w-full pt-2 pb-1 pl-3 text-BrandBlueText rounded h-9"
                 required
                 name="projectType"
@@ -164,8 +183,11 @@ export default function ContactForm({ onData }: ContactFormProps) {
           </div>
           <div>
             <div className="w-full lg:w-11/12">
-              <span className="font-bold">Project details or message*</span>
+              <label htmlFor="projectDetails" className="font-bold">
+                Project details or message*
+              </label>
               <textarea
+                id="projectDetails"
                 className="outline outline-1 w-full pt-2 pb-20 pl-3 placeholder-BrandBlueText rounded"
                 placeholder="Enter the details of the project, your question, or another message."
                 required
